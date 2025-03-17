@@ -24,11 +24,9 @@ resource "aws_iam_policy" "s3_access_policy" {
         Effect   = "Allow"
         Action   = [
           "s3:ListBucket",
-          "s3:GetObject"
         ]
         Resource = [
-          "arn:aws:s3:::*",
-          "arn:aws:s3:::*/*"
+          "arn:aws:s3:::otterize-logo"
         ]
       }
     ]
